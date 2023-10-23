@@ -1,3 +1,4 @@
+package Lesson2;
 public class second {
 	public static void main(String[] args) {
 		//  Примитивные типы данных понятие переменные
@@ -74,27 +75,9 @@ public class second {
 		int a3 = 074;
 		int a4 = 0x3C;
 		System.out.println(a4);
-		
-		
+				
 		// _ разделение для удобства
 		int a7 = 1_000_000___0_0__0;
 		System.out.println(a7);
-		
-		
-		// ДЗ
-		float ff = 2.2F;
-		float ff2 = 22.2F;
-		double dd = 32.2;
-		double dd2 = 332.3;
-		boolean bb = true;
-		boolean bb2 = false;
-		String output = ff + "," + ff2 + "," + dd + "," + dd2 + "," + bb + "," + bb2;
-		System.out.println(output);	
-		
-		char e = '1';
-		char e1 = '\u0555';
-		char e2 = 777;
-		System.out.println(e + "," + e1 + "," + e2);
-		
 		}
 }

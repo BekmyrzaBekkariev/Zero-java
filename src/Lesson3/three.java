@@ -1,3 +1,5 @@
+package Lesson3;
+
 
 public class three {
 	public static void main(String[] args) {
@@ -100,17 +102,5 @@ public class three {
 		char apple = 'a';
 		int apple10 = 10;
 		System.out.println(apple + apple10); // 107
-		
-		
-		// Home Work
-		// Посчитать потом написать проверить
-		int home1 = 5;
-		int home2 = 11;
-		double home3 = 5.5;
-		double home4 = 1.3;
-		long home5 = 20L;
-		Object resultHome = home2 / home3 + home4 % home1 - home5; // 2 + 3.3 / 5
-		System.out.println(resultHome);
-		
 	}
 }

@@ -2,6 +2,9 @@ package Lesson4;
 
 public class car {
 	// 1 способ создания String
+	
+	car(){} // Это конструтктор назывется также как и класс это default значение можно не писать	
+	
 	String color = "red";
 	String engine = "V6";
 	String type = "BMW";

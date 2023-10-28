@@ -1,20 +1,33 @@
-package Lesson4;
-public class Student {
+package Lesson5;
+public class HomeW2 {
 	int StudentId;
 	String NameStudent;
 	String SnameStudent;
 	int StudyYear;
-	float MathSabj;
-	float EcomomicSabj;
-	float ForeignSabj;
+	double MathSabj;
+	double EcomomicSabj;
+	double ForeignSabj;
+	
+	// Я просто скопировал и для дз я бы мог написать просто слишком долго
+	// И Улучшаем
+	
+	
+	double Srednee(double a, double b, double c) {
+		double result = ((a + b + c)/ 3);
+		return result;
+	}
+	
+	void inFo() {
+		System.out.println(" ");
+	}
 }
 
 class StudentTest{
 	public static void main(String[] args) {
-		
-		Student Student1 = new Student();
-		Student Student2 = new Student();
-		Student Student3 = new Student();
+		HomeW2 v = new HomeW2();
+		HomeW2 Student1 = new HomeW2();
+		HomeW2 Student2 = new HomeW2();
+		HomeW2 Student3 = new HomeW2();
 		
 		Student1.StudentId = 1;
 		Student1.NameStudent = "Bekmyrza";
@@ -29,8 +42,9 @@ class StudentTest{
 				"\nsurname: " + Student1.SnameStudent +
 				"\nyear studing: " + Student1.StudyYear +
 				"\nhow long: " + (2023 - Student1.StudyYear )+
-				"\neverage:" + ((Student1.MathSabj + Student1.EcomomicSabj + Student1.ForeignSabj) / 3));
-		System.out.println(" ");
+				"\neverage:" + (Student1.Srednee( Student1.MathSabj, Student1.EcomomicSabj, Student1.ForeignSabj)));
+		
+		v.inFo();
 		
 		Student2.StudentId = 2;
 		Student2.NameStudent = "Kiril";
@@ -45,9 +59,9 @@ class StudentTest{
 				"\nsurname: " + Student2.SnameStudent + 
 				"\nyear studing: " + Student2.StudyYear + 
 				"\nhow long: " + (2023 - Student2.StudyYear)+
-				"\neverage: " + ((Student2.MathSabj + Student2.EcomomicSabj + Student2.ForeignSabj) /3));
+				"\neverage: " + (Student2.Srednee( Student2.MathSabj, Student2.EcomomicSabj, Student2.ForeignSabj)));
 		
-		System.out.println(" ");
+		v.inFo();
 		
 		Student3.StudentId = 3;
 		Student3.NameStudent = "Igor";
@@ -62,6 +76,6 @@ class StudentTest{
 				"\nsurname: " + Student3.SnameStudent + 
 				"\nyear studing: " + Student3.StudyYear +
 				"\nhow long: " + (2023 - Student3.StudyYear) +
-				"\neverage: " + ((Student3.MathSabj + Student3.EcomomicSabj + Student3.ForeignSabj)/3 ));
+				"\neverage: " + (Student3.Srednee( Student3.MathSabj, Student3.EcomomicSabj, Student3.ForeignSabj)));
 	}
 }

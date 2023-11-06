@@ -1,5 +1,6 @@
-package Lesson5;
-public class HomeW2 {
+package Lesson6;
+
+public class HomeStudent {
 	int StudentId;
 	String NameStudent;
 	String SnameStudent;
@@ -20,15 +21,55 @@ public class HomeW2 {
 	void inFo() {
 		System.out.println(" ");
 	}
+	
+	// Создаём 3 конструктора
+	HomeStudent(int StudentId2, String NameStudent2, String SnameStudent2, int StudyYear2, 
+			double MathSabj2, double EcomomicSabj2, double ForeignSabj2){
+		StudentId = StudentId2;
+		NameStudent = NameStudent2;
+		SnameStudent =SnameStudent2;
+		StudyYear = StudyYear2;
+		MathSabj =MathSabj2;
+		EcomomicSabj = EcomomicSabj2;
+		ForeignSabj = ForeignSabj2;
+		
+	}
+	HomeStudent(int StudentId3, String NameStudent3, String SnameStudent3, int StudyYear3){
+		// мы испоьзовали метод this(*);
+		this(StudentId3, NameStudent3,SnameStudent3 , StudyYear3, 0.0, 0.0, 0.0); 
+	}	
+	HomeStudent(){
+	}
+	
 }
 
-class StudentTest{
-	
+
+
+
+
+
+
+
+
+
+
+class StudentTest{	
 	public static void main(String[] args) {
-		HomeW2 v = new HomeW2();
-		HomeW2 Student1 = new HomeW2();
-		HomeW2 Student2 = new HomeW2();
-		HomeW2 Student3 = new HomeW2();
+		// Мы можем просто так написать так будет удобнее чем внизу используя КОНСТРУКТОР
+		HomeStudent sy2 = new HomeStudent(1, "Igor", "Voitenko0", 3, 4.5,3.4,3.2);
+		System.out.println(sy2.EcomomicSabj);
+		sy2.inFo();
+		HomeStudent sy3 = new HomeStudent(2,"Grisha", "Relal" , 4, 0.0, 0.0, 0.0);
+		System.out.println(sy3.MathSabj);
+		sy3.inFo();
+		HomeStudent sy4 = new HomeStudent(0, null, null, 0, 0.0, 0.0, 0.0);
+		System.out.println(sy4.NameStudent);
+		sy4.inFo();
+		
+		HomeStudent v = new HomeStudent();
+		HomeStudent Student1 = new HomeStudent();
+		HomeStudent Student2 = new HomeStudent();
+		HomeStudent Student3 = new HomeStudent();
 		
 		Student1.StudentId = 1;
 		Student1.NameStudent = "Bekmyrza";

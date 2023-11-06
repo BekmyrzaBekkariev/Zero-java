@@ -29,7 +29,7 @@ class lesson5Test{
 		System.out.println(summaTrexChisel);
 		
 		// Мы могли бы покозать не обьявляя переменную
-		System.out.printl	n(ls.summa(2, 4,6));
+		System.out.println(ls.summa(2, 4,6));
 		
 		System.out.println(ls.sredneeArifm(20, 40, 60));
 	}

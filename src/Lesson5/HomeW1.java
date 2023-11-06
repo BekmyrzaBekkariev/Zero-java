@@ -44,7 +44,7 @@ class Offer{
 	
 		account.infoshow();
 		account.voidR();
-		account.popolnenieSheta(200);
+		account.popolnenieSheta(333);
 	
 		account.infoshow();
 		account.voidR();

@@ -6,7 +6,7 @@ package Lesson11;
 	 int door;
 	public int doorCount;
 	 
-	 Car(String color, String engine, int door){
+	 public Car(String color, String engine, int door){
 		 this.color = color;
 		 this.engine = engine;
 		 this.door = door;
